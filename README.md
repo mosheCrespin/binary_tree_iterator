@@ -1,6 +1,6 @@
 <div dir="rtl" lang="en">
 
-# Binary Tree with Iterators
+# Generic Binary Tree with Iterators
 .
 Class Name: `BinaryTree`.
 
