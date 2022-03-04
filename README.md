@@ -1,27 +1,19 @@
-<div dir="rtl" lang="he">
+<div dir="rtl" lang="en">
 
-# עץ בינארי עם איטרטורים
+# Binary Tree with Iterators
 .
+Class Name: `BinaryTree`.
 
-שם המחלקה: `BinaryTree`.
+* `add_root` - Gets an input and put it as the tree root.
+* `add_left` - Gets two inpusts, the first is an existance node, and the second its new left child. 
+* `add_right` - same as add_left method, just with the right child
+* `begin_preorder()`, `end_preorder()` - returns preorder Iterator (root, left, right) 
+* `begin_inorder()`, `end_inorder()` - returns inorder Iterator (left, root, right) 
+* `begin_postorder()`, `end_postorder()` - returns postorder Iterator (left, right, root) 
+* `<<` - output operator, prints the tree.
 
-* `add_root` - מקבלת קלט אחד ושמה אותו בשורש של העץ. אם כבר יש משהו בשורש, הוא מוחלף.
-* `add_left` - מקבלת שני קלטים: הקלט הראשון מציין דבר שכבר קיים בעץ. הקלט השני מציין דבר חדש שיש להוסיף בתור הילד השמאלי שלו (אם כבר יש לו ילד שמאלי - יש להחליף את התוכן שלו). 
-* `add_right` - כנ"ל, רק שהתוספת היא בתור הילד הימני.
-* `begin_preorder()`, `end_preorder()` - מחזירות איטרטורים לצורך מעבר בסדר preorder (אב - שמאל - ימין).
-* `begin_inorder()`, `end_inorder()` - מחזירות איטרטורים לצורך מעבר בסדר inorder (שמאל - אב - ימין).
-* `begin_postorder()`, `end_postorder()` - מחזירות איטרטורים לצורך מעבר בסדר postorder (שמאל - ימין - אב).
-* אופרטור פלט - מדפיס את העץ בפורמט הגיוני.
+this class has copy constructor and move constructor
 
-
-  תוספות לחלק ב:
-* **יעילות**: האיטרטור צריך להיות יעיל ככל האפשר מבחינת זיכרון. בפרט, אין לשמור את כל תוכן העץ לא נשמר בגוף האיטרטור. נסו למצוא פתרון יעיל יותר.
-* כתבו בנאי מעתיק ואופרטור השמה המבצעים **העתקה עמוקה**, כמו שלמדנו בשיעור 5.
-* כתבו בנאי מעביר ואופרטור העברה המבצעים **העתקה שטחית**, כמו שלמדנו בשיעור על פוינטרים חכמים.
-* הפקודות `make test1`, `make test2`, `make test3`, `make tidy`, `make valgrind` צריכות לעבוד ללא שגיאות.
-* כתבו תוכנית ראשית יצירתית לצורך הדגמה; לצורך התוכנית, השתמשו באלגוריתמים לבחירתכם מהספריה התקנית.
-
-
-אין לשנות את הקבצים הנתונים, אלא רק להוסיף קבצים חדשים.
+this class successfully passed valgrind and tidy checks.
 
 </div>
