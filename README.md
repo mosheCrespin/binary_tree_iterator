@@ -14,6 +14,6 @@ Class Name: `BinaryTree`.
 
 this class has copy constructor and move constructor
 
-this class successfully passed valgrind and tidy checks.
+successfully passed valgrind and tidy checks.
 
 </div>
